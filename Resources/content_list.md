@@ -8,13 +8,14 @@
 * python --version
 * python -m virtualenv venv
 * venv\Scripts\activate
+* pip list
 * python -m pip install Django
 * python -m django --version
 * django-admin startproject <project_name> .
 * python manage.py runserver
 * python manage.py startapp <app_name>
 
-
+* python manage.py createsuperuser
 # Reference
 
 ## Views
