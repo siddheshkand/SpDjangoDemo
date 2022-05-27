@@ -46,3 +46,5 @@
 * https://www.geeksforgeeks.org/django-forms/
 
 
+## Ui Ref Templates
+* https://bootsnipp.com/
