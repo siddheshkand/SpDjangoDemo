@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Third Party Apps
+    'crispy_forms',
+
+    # Custom Apps
     'todo'
 ]
 
@@ -49,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 ROOT_URLCONF = 'sample.urls'
 

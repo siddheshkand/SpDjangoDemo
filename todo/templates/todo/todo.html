@@ -1,4 +1,5 @@
 {% extends 'todo\base.html' %} 
+{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -9,8 +10,8 @@
         <div class="col-md-6">
             <form action = "" method = "post">
                 {% csrf_token %}
-                {{my_custom_form.as_p }}
-                <input type="submit" value=Submit">
+                {{my_custom_form|crispy }}
+                <input class="mt-3 btn btn-primary" type="submit" value="Submit">
             </form>
             
             <ul class="list-group mt-5">
@@ -25,6 +26,8 @@
                             {{ t.title }} ✅
                                 {% autoescape off %}
                             <p>{{t.description}}</p>
+                            <p>{{t.favorite_color}}</p>
+                            <p>{{t.date_of_birth}}</p>
                             {% endautoescape %}  
                         </li>
                     {% else %}
@@ -32,6 +35,8 @@
                             {{ t.title }} ❌
                                 {% autoescape off %}
                             <p>{{t.description}}</p>
+                            <p>{{t.favorite_color}}</p>
+                            <p>{{t.date_of_birth}}</p>
                             {% endautoescape %}  
                         </li>
                     {% endif %}
