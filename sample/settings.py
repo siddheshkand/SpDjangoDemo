@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'crispy_forms',
 
     # Custom Apps
-    'todo'
+    'todo',
+    'inventory'
 ]
 
 MIDDLEWARE = [

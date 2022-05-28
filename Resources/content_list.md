@@ -48,3 +48,8 @@
 
 ## Ui Ref Templates
 * https://bootsnipp.com/
+
+
+## Jquery
+* https://www.w3schools.com/jquery/default.asp
+
